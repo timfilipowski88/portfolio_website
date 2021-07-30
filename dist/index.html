@@ -5,167 +5,139 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/dist/js/main.js"></script>
+
   <link rel="stylesheet" href="css/main.css">
-  <title>Tim Filipowski | Full Stack Web Developer</title>
+  <title> Web Dev Garden </title>
 </head>
 
 <body>
-  <header id="header-home">
-    <div class="container">
-      <nav id="main-nav">
-        <img src="img/logo.png" alt="" id="logo">
-        <ul>
-          <li><a href="index.html" class="current">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="header-content">
-        <h1>I Am Tim The <span class="txt-type" data-wait="3000"
-            data-words='["Web Developer", "Designer", "Dream Chaser"]'></span></h1>
-        <p class="lead">I specialize in Full Stack web development</p>
-        <a href="work.html" class="btn-light">View My Work</a>
-      </div>
+  <header id="header-home" class="header-home">
+    <!-- Main Nav -->
+    <nav id="navbar" class="navbar top">
+      <a href="#header-home">
+        <h1><span class="logo-color">Web</span>Dev<span class="logo-color">Garden</span></h1>
+      </a>
+      <ul>
+        <li><a href="#header-home" class="btn">Home</a></li>
+        <li><a href="#about" class="btn">About</a></li>
+        <li><a href="#work" class="btn">Work</a></li>
+        <li><a class="btn-contact-open">Contact</a></li>
+      </ul>
+      <span id="nav-open" class="btn-mobile-open">&#9776;</span>
+    </nav>
+
+    <!-- Header Content -->
+    <div id="header-content">
+      <h1>Hello! Let's Make <span class="txt-type" data-wait="3000"
+          data-words='["Web Applications.", "Designs.", "Solutions."]'></span></h1>
+      <p class="lead">I work in Full Stack Web Development.</p>
+      <a href="#work" class="btn-light">See My Work</a>
     </div>
   </header>
 
-  <!-- Section A: Specilize -->
-  <section id="home-a" class="text-center py-2">
-    <div class="container">
-      <h2 class="section-title">I specialize In</h2>
-      <div class="bottom-line"></div>
-      <p class="lead">
-        Photography as well as creating digital masterpieces and UI/UX layouts for websites and mobile applications
-      </p>
-      <div class="specials">
-        <div>
-          <div class="i fas fa-file-alt fa-2x"></div>
-          <h3>Concepting</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eos beatae inventore voluptatum animi,
-            blanditiis ad saepe facilis sed suscipit?</p>
-        </div>
-        <div>
-          <div class="i fas fa-desktop fa-2x"></div>
-          <h3>UI/UX</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eos beatae inventore voluptatum animi,
-            blanditiis ad saepe facilis sed suscipit?</p>
-        </div>
-        <div>
-          <div class="i fas fa-object-ungroup fa-2x"></div>
-          <h3>Visual Design</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eos beatae inventore voluptatum animi,
-            blanditiis ad saepe facilis sed suscipit?</p>
-        </div>
+  <!-- Mobile Nav Overlay -->
+  <div id="nav-overlay">
+    <a class="btn-mobile-close">&times;</a>
+    <div class="overlay-content">
+      <a href="#header-home">Home</a>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a class="btn-contact-open">Contact</a>
+    </div>
+  </div>
 
-        <div>
-          <div class="i fas fa-thumbs-up fa-2x"></div>
-          <h3>Interaction</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eos beatae inventore voluptatum animi,
-            blanditiis ad saepe facilis sed suscipit?</p>
+  <!-- Contact Form Modal -->
+  <div id="contact-modal" class="modal">
+    <div class="modal-content">
+      <a class="btn-contact-close">&times;</a>
+      <h2>Contact Form</h2>
+      <p class="lead">Here is where you can reach me</p>
+      <form id="contact-form" action="">
+        <div class="form-fields">
+          <input class="text-input name-input" type="text" name="name" placeholder="Name" />
+          <input class="text-input subject-input" type="text" name="subject" placeholder="Subject" />
+          <input class="text-input email-input" type="email" name="email" placeholder="Email Address" />
+          <input class="text-input phone-input" type="text" name="phone" placeholder="Phone" />
+          <textarea class="text-input message-input" name="message" placeholder="Enter Message"></textarea>
+          <div class="my-2">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
+        </div>
+        <button type="submit" class="btn-light">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Section A: About -->
+  <section id="about" class="py-2">
+    <div class="container">
+      <div class="about-content grid-col-2">
+        <img src="/dist/img/01_tim.jpg" alt="" id="about-image">
+        <div class="about-card">
+          <h2>About Me</h2>
+          <p class="lead my-1"><span class="lead">Howdy! </span> My name is Tim Filipowski, I am a full stack web
+            developer working with HTML5, CSS3, Sass, JavaScript, Python, and React. My goal is to build websites that
+            can make an impact on the world.</p>
+          <p class="my-1">Please drop me a line with the "Contact" link in the NavBar. Cheers!</p>
+          <div class="about-icons my-1">
+            <i class="fab fa-html5 fa-4x"></i>
+            <i class="fab fa-css3-alt fa-4x"></i>
+            <i class="fab fa-sass fa-4x"></i>
+            <i class="fab fa-js-square fa-4x"></i>
+            <i class="fab fa-python fa-4x"></i>
+            <i class="fab fa-react fa-4x"></i>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Section B: Stats -->
-  <section id="home-b" class="text-center py-2">
-    <div class="stats">
-      <div>
-        <ul>
-          <li><i class="fas fa-users fa-3x"></i></li>
-          <li class="stats-title">Clients</li>
-          <li class="stats-number">100</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li><i class="fas fa-award fa-3x"></i></li>
-          <li class="stats-title">Awards</li>
-          <li class="stats-number">3</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li><i class="fas fa-hourglass-start fa-3x"></i></li>
-          <li class="stats-title">Hours Worked</li>
-          <li class="stats-number">3500</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li><i class="fas fa-code-branch fa-3x"></i></li>
-          <li class="stats-title">Projects Completed</li>
-          <li class="stats-number">135</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section C: Process -->
-  <section id="home-c" class="text-center py-2">
+  <!-- Section B: Work -->
+  <section id="work" class="py-2">
     <div class="container">
-      <h2 class="section-title">
-        My Creative Process
-      </h2>
-      <div class="bottom-line"></div>
-      <p class="lead">
-        All of my UI/UX and design projects are based off of a practiced formula to get the result I am looking for
-      </p>
-      <div class="process">
-        <div>
-          <i class="fas fa-file-alt fa-4x process-icon my-2">
-            <div class="process-step">1</div>
-          </i>
-          <h3>Discuss the Project</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus esse, eos error iusto cum eaque?</p>
+      <!-- Site 1: This Portfolio Site Card -->
+      <div class="work-card">
+        <!-- Work Content -->
+        <div class="work-content">
+          <div class="work-header">
+            <h2>Portfolio Site</h2>
+            <ul>
+              <li><a href="#"><i class="fab fa-github fa-4x"></i></a></li>
+              <li><a href="#"><i class="far fa-user fa-4x"></i></a></li>
+            </ul>
+          </div>
+          <div class="work-info">
+            <p class="my-2">This website is utilizes HTML5, CSS3, Sass, and Javascript to create an interactive landing
+              page displaying my portfolio.</p>
+            <div>
+              <i class="fab fa-html5 fa-3x"></i>
+              <i class="fab fa-css3-alt fa-3x"></i>
+              <i class="fab fa-sass fa-3x"></i>
+              <i class="fab fa-js-square fa-3x"></i>
+              <i class="fab fa-github fa-3x"></i>
+            </div>
+          </div>
         </div>
-        <div>
-          <i class="fas fa-desktop fa-4x process-icon my-2">
-            <div class="process-step">2</div>
-          </i>
-          <h3>Brainstorming and Concept</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus esse, eos error iusto cum eaque?</p>
-        </div>
-        <div>
-          <i class="fas fa-object-ungroup fa-4x process-icon my-2">
-            <div class="process-step">3</div>
-          </i>
-          <h3>UI/UX Planning</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus esse, eos error iusto cum eaque?</p>
-        </div>
-        <div>
-          <i class="fas fa-thumbs-up fa-4x process-icon my-2">
-            <div class="process-step">4</div>
-          </i>
-          <h3>Interaction</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus esse, eos error iusto cum eaque?</p>
-        </div>
+        <!-- Work Image -->
+        <a href=""><img src="/dist/img/01_betty.png" alt="" class="work-image"></a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer id="main-footer">
-    <div class="footer-content container">
-      <p>Copyright &copy; 2019. All Rights Reserved</p>
-      <div class="social">
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-linkedin"></i>
-      </div>
-    </div>
+  <footer>
+    <p>Tim Filipowski &copy; 2021 </p>
+    <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+    <a href=""><i class="fab fa-github fa-2x"></i></a>
   </footer>
 
-  <!-- Type Effect Tutorial: https://wwww.youtube.com/watch?v=POXsdt-pB4E -->
-  <script src="./dist/js/typewriter.js"></script>
+      <!-- Type Effect Tutorial: https://www.youtube.com/watch?v=POX3dT-pB4E -->
+    <script src="js/typewriter.js"></script>
 </body>
 
 </html>

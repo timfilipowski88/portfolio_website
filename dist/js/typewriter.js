@@ -1,3 +1,6 @@
+//  This effect is credited to Brad Traversy of Traversy Media copywright 2020.  
+
+
 class TypeWriter {
   constructor(txtElement, words, wait = 3000) {
     this.txtElement = txtElement;
