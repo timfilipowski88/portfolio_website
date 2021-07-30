@@ -7,7 +7,9 @@ $dark-color: #333;
 $light-color: #fff;
 // Images
 $bg-image: url('../img/seedlings.jpg');
-$about-image: url('../img/01_about.png'); // Set Text Color
+$about-image: url('../img/01_about.png');
+$portfolio-site-image: url('../img/seedlings.jpg');
+// Set Text Color
 
 @function set-text-color($color) {
   @if (lightness($color) > 50) {
