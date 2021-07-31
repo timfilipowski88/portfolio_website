@@ -127,7 +127,8 @@ img {
   line-height: 60px;
   cursor: pointer;
   margin-right: 1.5rem;
-  border-radius: 10px; }
+  border-radius: 10px;
+  display: none; }
   #header-home .navbar .btn-mobile-open:hover {
     background-color: #FF6600; }
 

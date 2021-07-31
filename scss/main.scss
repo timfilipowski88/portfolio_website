@@ -134,7 +134,7 @@ img {
   cursor: pointer;
   margin-right: 1.5rem;
   border-radius: 10px;
-  // display: none;
+  display: none;
 
   &:hover {
     background-color: $secondary-color;
@@ -169,10 +169,6 @@ img {
       color: $secondary-color;
     }
   }
-
-  // font-size: 4rem;
-  // cursor: pointer;
-  // border-radius: 10px;
 
 
   .overlay-content {
