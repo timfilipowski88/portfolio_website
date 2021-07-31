@@ -238,6 +238,9 @@ img {
         font-size: 2rem; }
       #about .about-content .about-card .about-header div a {
         padding: 0.5rem; }
+    #about .about-content .about-card .lead-p {
+      font-size: 1.2rem;
+      margin: 1rem 0; }
     #about .about-content .about-card .about-icons {
       display: flex;
       width: 100%;
@@ -330,6 +333,8 @@ footer {
         height: 10rem; }
   #about .about-content .about-card .about-header h2 {
     font-size: 1.3rem; }
+  #about .about-content .about-card .lead-p {
+    font-size: 1rem; }
   #work .container h1 {
     font-size: 2rem; }
   #work .work-header h2 {
