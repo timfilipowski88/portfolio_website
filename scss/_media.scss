@@ -3,9 +3,14 @@
 
 // Smartphones
 @media (max-width: 500px) {
+
+  // Utilities
+  .grid-col-2 {
+    grid-template-columns: 1fr;
+  }
+
   #header-home {
     .navbar {
-
       a h1 {
         font-size: 2rem;
 
@@ -20,7 +25,52 @@
         display: inline;
       }
     }
+
+    #header-content {
+      h1 {
+        font-size: 2rem;
+      }
+    }
   }
+
+  // Contact Me Modal
+#contact-modal {
+  .modal-content {
+    #contact-form {
+      .form-fields {
+        grid-template-areas:
+        'name'
+        'email'
+        'subject'
+        'phone'
+        'message'
+        'recaptcha'
+        'submit';
+
+        .message-input {
+          height: 10rem;
+        }
+      }
+    }
+  }
+}
+
+  // Work Section
+  #work {
+    .container h1 {
+      font-size: 2rem;
+    }
+    
+    .work {
+      &-header {
+        h2 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+
 }
 
 // Landscape

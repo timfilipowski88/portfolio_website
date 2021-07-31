@@ -6,6 +6,8 @@ $(function () {
     let contactModal = document.getElementById("contact-modal")
     console.log(contactModal);
     contactModal.style.display = "block";
+
+    document.getElementById("nav-overlay").style.height = "0%";
   })
 
   $('.btn-contact-close').click(function (e) {
@@ -59,6 +61,23 @@ $(function () {
           },
           800
         );
+      }
+    });
+
+// Mobile Menu Smoothscroll
+    $('#nav-overlay .btn').on('click', function (e) {
+      if (this.hash !== '') {
+        e.preventDefault();
+
+        const hash = this.hash;
+        $('html, body').animate(
+          {
+            scrollTop: $(hash).offset().top - 100,
+          },
+          800
+        );
+
+        document.getElementById("nav-overlay").style.height = "0%";
       }
     });
 

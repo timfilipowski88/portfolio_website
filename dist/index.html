@@ -9,7 +9,7 @@
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="/js/main.js"></script>
+  <script src="js/main.js"></script>
 
   <link rel="stylesheet" href="css/main.css">
   <title> Web Dev Garden </title>
@@ -44,9 +44,9 @@
   <div id="nav-overlay">
     <a class="btn-mobile-close">&times;</a>
     <div class="overlay-content">
-      <a href="#header-home">Home</a>
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
+      <a href="#header-home" class="btn">Home</a>
+      <a href="#about" class="btn">About</a>
+      <a href="#work" class="btn">Work</a>
       <a class="btn-contact-open">Contact</a>
     </div>
   </div>
@@ -64,33 +64,40 @@
           <input class="text-input email-input" type="email" name="email" placeholder="Email Address" />
           <input class="text-input phone-input" type="text" name="phone" placeholder="Phone" />
           <textarea class="text-input message-input" name="message" placeholder="Enter Message"></textarea>
-          <div class="my-2">
-            <div data-netlify-recaptcha="true"></div>
-          </div>
+          <div data-netlify-recaptcha="true" class="form-recaptcha"></div>
+          <button type="submit" class="btn-light form-submit">Submit</button>
         </div>
-        <button type="submit" class="btn-light">Submit</button>
       </form>
     </div>
   </div>
 
   <!-- Section A: About -->
-  <section id="about" class="py-2">
+  <section id="about">
     <div class="container">
       <div class="about-content grid-col-2">
-        <img src="/img/01_tim.jpg" alt="" id="about-image">
+        <div class="about-image"></div>
         <div class="about-card">
-          <h2>About Me</h2>
+          <div class="about-header">
+            <h2>About Me</h2>
+            <div>
+              <a href="https://www.linkedin.com/in/timothy-filipowski-b889572a/" target="_blank"><i
+                  class="fab fa-linkedin fa-3x"></i>
+              </a>
+              <a href="https://github.com/timfilipowski88" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+            </div>
+
+          </div>
           <p class="lead my-1"><span class="lead">Howdy! </span> My name is Tim Filipowski, I am a full stack web
             developer working with HTML5, CSS3, Sass, JavaScript, Python, and React. My goal is to build websites that
             can make an impact on the world.</p>
           <p class="my-1">Please drop me a line with the "Contact" link in the NavBar. Cheers!</p>
           <div class="about-icons my-1">
-            <i class="fab fa-html5 fa-4x"></i>
-            <i class="fab fa-css3-alt fa-4x"></i>
-            <i class="fab fa-sass fa-4x"></i>
-            <i class="fab fa-js-square fa-4x"></i>
-            <i class="fab fa-python fa-4x"></i>
-            <i class="fab fa-react fa-4x"></i>
+            <i class="fab fa-html5 fa-2x"></i>
+            <i class="fab fa-css3-alt fa-2x"></i>
+            <i class="fab fa-sass fa-2x"></i>
+            <i class="fab fa-js-square fa-2x"></i>
+            <i class="fab fa-python fa-2x"></i>
+            <i class="fab fa-react fa-2x"></i>
           </div>
         </div>
       </div>
@@ -100,31 +107,34 @@
   <!-- Section B: Work -->
   <section id="work" class="py-2">
     <div class="container">
+      <h1>My Work</h1>
+      <div class="bar"></div>
       <!-- Site 1: This Portfolio Site Card -->
-      <div class="work-card">
+      <div class="work-card grid-col-2">
         <!-- Work Content -->
         <div class="work-content">
           <div class="work-header">
             <h2>Portfolio Site</h2>
             <ul>
-              <li><a href="#"><i class="fab fa-github fa-4x"></i></a></li>
-              <li><a href="#"><i class="far fa-user fa-4x"></i></a></li>
+              <li><a href="https://github.com/timfilipowski88/portfolio_website" target="_blank"><i
+                    class="fab fa-github fa-3x"></i></a></li>
+              <li><a href="#header-home"><i class="far fa-user fa-3x"></i></a></li>
             </ul>
           </div>
           <div class="work-info">
             <p class="my-2">This website is utilizes HTML5, CSS3, Sass, and Javascript to create an interactive landing
               page displaying my portfolio.</p>
             <div>
-              <i class="fab fa-html5 fa-3x"></i>
-              <i class="fab fa-css3-alt fa-3x"></i>
-              <i class="fab fa-sass fa-3x"></i>
-              <i class="fab fa-js-square fa-3x"></i>
-              <i class="fab fa-github fa-3x"></i>
+              <i class="fab fa-html5 fa-2x"></i>
+              <i class="fab fa-css3-alt fa-2x"></i>
+              <i class="fab fa-sass fa-2x"></i>
+              <i class="fab fa-js-square fa-2x"></i>
+              <i class="fab fa-github fa-2x"></i>
             </div>
           </div>
         </div>
         <!-- Work Image -->
-        <a href="#header-home"><img src="../img/seedlings.jpg" alt="" class="work-image work-portfolio-image"></a>
+        <a href="#header-home"><img src="img/seedlings.jpg" alt="" class="work-image work-portfolio-image"></a>
       </div>
     </div>
   </section>
@@ -132,12 +142,13 @@
   <!-- Footer -->
   <footer>
     <p>Tim Filipowski &copy; 2021 </p>
-    <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
-    <a href=""><i class="fab fa-github fa-2x"></i></a>
+    <a href="https://www.linkedin.com/in/timothy-filipowski-b889572a/" target="_blank"><i
+        class="fab fa-linkedin fa-2x"></i></a>
+    <a href="https://github.com/timfilipowski88" target="_blank"><i class="fab fa-github fa-2x"></i></a>
   </footer>
 
-      <!-- Type Effect Tutorial: https://www.youtube.com/watch?v=POX3dT-pB4E -->
-    <script src="js/typewriter.js"></script>
+  <!-- Type Effect Tutorial: https://www.youtube.com/watch?v=POX3dT-pB4E -->
+  <script src="js/typewriter.js"></script>
 </body>
 
 </html>
