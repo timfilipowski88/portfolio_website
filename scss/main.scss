@@ -50,7 +50,7 @@ img {
 
     h1 {
       font-size: 2.5rem;
-      padding: 1rem 2rem;
+      padding: 1rem;
       color: $light-color;
 
       .logo-color {
@@ -150,6 +150,8 @@ img {
   z-index: 5;
   top: 0;
   left: 0;
+  display: flex;
+  flex-direction: column;
   background: rgba(0, 0, 0, 0.9);
   transition: 0.5s;
   overflow-y: hidden;
@@ -158,10 +160,8 @@ img {
   .btn-mobile-close {
     font-size: 90px;
     line-height: 90px;
+    align-self: flex-end;
     color: $light-color;
-    position: absolute;
-    top: 0;
-    right: 0;
     margin-right: 1.5rem;
     cursor: pointer;
 
@@ -172,8 +172,6 @@ img {
 
 
   .overlay-content {
-    position: relative;
-    top: 25%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
@@ -225,6 +223,7 @@ img {
     }
 
     #contact-form {
+      margin-top: 1rem;
 
       .form-fields {
         display: grid;
