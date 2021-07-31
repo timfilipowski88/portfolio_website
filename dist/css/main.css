@@ -84,6 +84,7 @@ img {
   transition: 0.5s; }
   #header-home .navbar h1 {
     font-size: 2.5rem;
+    line-height: 60px;
     color: #fff; }
     #header-home .navbar h1 .logo-color {
       color: #009933; }
