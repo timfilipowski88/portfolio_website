@@ -151,7 +151,6 @@ img {
   left: 0;
   display: flex;
   flex-direction: column;
-  padding-top: 1rem;
   background: rgba(0, 0, 0, 0.9);
   transition: 0.5s;
   overflow-y: hidden;
@@ -161,7 +160,7 @@ img {
     font-size: 70px;
     line-height: 70px;
     align-self: flex-end;
-    margin-right: 1rem;
+    margin: 1rem 1rem 0 0;
     color: $light-color;
     cursor: pointer;
 
