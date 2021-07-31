@@ -328,6 +328,8 @@ footer {
       grid-template-areas: 'name' 'email' 'subject' 'phone' 'message' 'recaptcha' 'submit'; }
       #contact-modal .modal-content #contact-form .form-fields .message-input {
         height: 10rem; }
+  #about .about-content .about-card .about-header h2 {
+    font-size: 1.3rem; }
   #work .container h1 {
     font-size: 2rem; }
   #work .work-header h2 {
