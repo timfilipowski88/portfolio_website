@@ -315,7 +315,7 @@ footer {
   #header-home .navbar ul {
     display: none; }
   #header-home .navbar .btn-mobile-open {
-    display: inline; }
+    display: block; }
   #header-home #header-content h1 {
     font-size: 2rem; }
   #contact-modal .modal-content {
