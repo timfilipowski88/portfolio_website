@@ -28,7 +28,7 @@
 
   #header-home {
     .navbar {
-      a h1 {
+      .logo {
         font-size: 2rem;
 
         // .logo-color {}
@@ -39,7 +39,7 @@
       }
 
       .btn-mobile-open {
-        display: block;
+        display: inline;
       }
     }
 

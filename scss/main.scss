@@ -49,7 +49,7 @@ img {
     color: $light-color;
     transition: 0.5s;
 
-    h1 {
+    .logo {
       font-size: 2.5rem;
       line-height: 60px;
       color: $light-color;
@@ -130,8 +130,8 @@ img {
 
 // Mobile Menu Open
 #header-home .navbar .btn-mobile-open {
-  // font-size: 3rem;
-  // line-height: 3rem;
+  font-size: 4rem;
+  line-height: 4rem;
   cursor: pointer;
   border-radius: 10px;
   display: none;
