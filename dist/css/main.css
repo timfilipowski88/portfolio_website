@@ -124,8 +124,8 @@ img {
       background: #FF6600; }
 
 #header-home .navbar .btn-mobile-open {
-  font-size: 4rem;
-  line-height: 4rem;
+  font-size: 60px;
+  line-height: 60px;
   cursor: pointer;
   border-radius: 10px;
   display: none; }
