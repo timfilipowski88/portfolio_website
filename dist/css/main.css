@@ -221,7 +221,8 @@ img {
   margin-top: 1.5rem; }
   #about .about-content .about-image {
     background: url("../img/01_tim.jpg") no-repeat center center/cover;
-    border-radius: 5px; }
+    border-radius: 5px;
+    min-height: 300px; }
   #about .about-content .about-card {
     display: flex;
     flex-direction: column;

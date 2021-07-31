@@ -288,6 +288,7 @@ img {
     .about-image {
       background: $about-image no-repeat center center/cover;
       border-radius: 5px;
+      min-height: 300px;
     }
 
     .about-card {
