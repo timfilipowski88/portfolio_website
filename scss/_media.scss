@@ -1,5 +1,22 @@
 // Tablets & Smaller
-// @media(max-width: 800px) {}
+@media (max-width: 800px) {
+  #header-home {
+    .navbar {
+      a h1 {
+        font-size: 1.5rem;
+      }
+
+      ul {
+        li {
+          a {
+            font-size: 1rem;
+            padding: 0.75rem 1rem;
+          }
+        }
+      }
+    }
+  }
+}
 
 // Smartphones
 @media (max-width: 500px) {
@@ -34,33 +51,33 @@
   }
 
   // Contact Me Modal
-#contact-modal {
-  .modal-content {
-    #contact-form {
-      .form-fields {
-        grid-template-areas:
-        'name'
-        'email'
-        'subject'
-        'phone'
-        'message'
-        'recaptcha'
-        'submit';
+  #contact-modal {
+    .modal-content {
+      #contact-form {
+        .form-fields {
+          grid-template-areas:
+            'name'
+            'email'
+            'subject'
+            'phone'
+            'message'
+            'recaptcha'
+            'submit';
 
-        .message-input {
-          height: 10rem;
+          .message-input {
+            height: 10rem;
+          }
         }
       }
     }
   }
-}
 
   // Work Section
   #work {
     .container h1 {
       font-size: 2rem;
     }
-    
+
     .work {
       &-header {
         h2 {
