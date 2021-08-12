@@ -1,10 +1,10 @@
 # Portfolio Website
 https://www.webdevgarden.com/
 
-A personal Portfolio Website
+A Personal Web Development Portfolio Website
 
-## task
-I built this project as a way to get my code and projects out and to introduce myself to the coding community. 
+## Task
+I built this project as a way to get my code and projects out there and to introduce myself to the coding community. 
 
 ## Criteria
 My criteria for creating this project was to create something that showcased my ability to use HTML, CSS, Sass, and Vanilla JavaScript to created a simple, interactive website with a clear message of who I was, what I was trying to accomplish, and what I had to offer.
@@ -21,10 +21,11 @@ Go to the index file and open it with your browser.
 To edit the Sass open the repository with a IDE and use your terminal to execute "npm run sass" , this will executed the node script to update your Sass changes. 
 
 
-## Teck stack
+## Teck Stack
 - HTML5
 - CSS3
 - Sass
 - JavaScript
+- Github
 - Netlify
 - NameCheap
