@@ -1,5 +1,5 @@
 # Portfolio Website
-https://www.webdevgarden.com/
+[Web Dev Garden](https://www.webdevgarden.com/)
 
 A Personal Web Development Portfolio Website
 
